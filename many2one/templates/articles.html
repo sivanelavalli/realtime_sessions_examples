@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/articlesubmit/" method="post">
+    {% csrf_token %}
+    <table align="center" border="2">
+    <tr>
+        <th>
+            Reporter Details Submition
+        </th>
+    </tr>
+        <tr>
+        <td><input type="text" placeholder="firstname" name="n1"></td></tr>
+    <tr><td><input type="text" placeholder="lastname" name="n2"></td></tr>
+
+    <tr><td><input type="email" placeholder="email" name="n3"></td></tr>
+        <td><button type="submit">Submit</button> </td>
+    </tr>
+
+
+</table>
+    </form>
+<a href="/gotoarticles/">GotoArticles</a>
+</body>
+</html>

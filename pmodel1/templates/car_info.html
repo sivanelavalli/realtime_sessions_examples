@@ -1,0 +1,27 @@
+<html>
+<body>
+<table align="center" border="2">
+    <tr>
+        <td width="100">Vehicle_id</td>
+        <td width="100">Customer</td>
+        <td width="100">Registration_number</td>
+        <td width="100">Engine_number</td>
+        <td width="100">Choice_number</td>
+        <td width="100">Registration_Date</td>
+        <td width="100">Plocy_end_date</td>
+    </tr>
+    {% for x in object_list %}
+
+        <tr>
+        <td width="100">{{ x.vehicle_id }}</td>
+        <td width="100">{{ x.customer }}</td>
+        <td width="100">{{ x.registration_number }}</td>
+        <td width="100">{{ x.engine_number }}</td>
+        <td width="100">{{ x.choice_number }}</td>
+        <td width="100">{{ x.registration_date }}</td>
+        <td width="100">{{ x.policy_end_date }}</td>
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<body>
+<table align="center" border="2">
+    <tr>
+        <td width="100">Idno</td>
+        <td width="100">Firstname</td>
+        <td width="100">Lastname</td>
+        <td width="100">Email</td>
+    </tr>
+    {% for x in object_list %}
+
+        <tr>
+        <td width="100">{{ x.cust_id }}</td>
+        <td width="100">{{ x.first_name }}</td>
+        <td width="100"><a href="/view_theircar{{ x.last_name }}/">{{ x.last_name }}</a></td>
+        <td width="100">{{ x.email }}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+</body>
+</html>

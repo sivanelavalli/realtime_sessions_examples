@@ -1,0 +1,30 @@
+<html>
+<body>
+<table align="center" border="2">
+    <tr>
+        <th>Details</th>
+    </tr>
+     <tr>
+        <td>vehicle_id</td>
+        <td>customer</td>
+        <td>registration_number</td>
+        <td>engine_number</td>
+        <td>choice_number</td>
+        <td>registration_date</td>
+        <td>policy_end_date</td>
+        </tr>
+    {% for x in data %}
+        <tr>
+        <td>{{ x.vehicle_id }}</td>
+        <td>{{ x.customer }}</td>
+        <td>{{ x.registration_number }}</td>
+        <td>{{ x.engine_number }}</td>
+        <td>{{ x.choice_number }}</td>
+        <td>{{ x.registration_date }}</td>
+        <td>{{ x.policy_end_date }}</td>
+        <td><a href="/getbrand{{ x.vehicle_id }}/">Brand</a> </td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

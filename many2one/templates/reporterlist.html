@@ -1,0 +1,29 @@
+<html>
+<body>
+<form action="/submitreports/" method="post">
+    {% csrf_token %}
+<table align="center" border="2">
+    <tr><td><input type="number" name="id1"></td></tr>
+    <tr>
+        <td><input type="text" placeholder="head_line" name="t1"></td></tr>
+    <tr><td><input type="date"name="t2"></td></tr>
+
+    <tr>
+        <td><button type="submit">Submit</button> </td>
+    </tr>
+
+</table>
+    </form>
+
+<form action="/getasperdate/" method="post">
+    {% csrf_token %}
+<table align="center" border="2">
+    <tr><td><button type="submit">AtPresent_Records</button> </td></tr>
+</table>
+        </form>
+<form action="/futurearticles/" method="post">
+    {% csrf_token %}
+    <button type="submit">Future Articles</button>
+</form>
+</body>
+</html>

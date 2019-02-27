@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<table align="center" border="2">
+    <tr>
+        <td width="100"></td>
+                <td width="100"></td>
+        <td width="100"></td>
+        <td width="100"></td>
+        <td width="100"></td>
+        <td width="100"></td>
+    </tr>
+    {% for x in object_list %}
+        <tr>
+        <td width="100">{{ x.v_model }}</td>
+                <td width="100">{{ x.v_name }}</td>
+        <td width="100">{{ x.colour }}</td>
+        <td width="100">{{ x.engine_cc }}</td>
+        <td width="100">{{ x.fuel_type }}</td>
+        <td width="100">{{ x.seating_capacity }}</td>
+
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
